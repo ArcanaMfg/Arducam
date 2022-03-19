@@ -1,1 +1,1 @@
-Arducam camera control script sample
+Arducam camera control sample scripts
