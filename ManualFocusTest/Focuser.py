@@ -46,7 +46,7 @@ class Focuser:
                 self.opts[Focuser.OPT_FOCUS]["MAX_VALUE"] = ctrl['maximum']
                 self.opts[Focuser.OPT_FOCUS]["DEF_VALUE"] = ctrl['default_value']
                 self.focus_value = v4l2_utils.get_ctrl(self.fd, Focuser.FOCUS_ID)
-                print(self.opts[Focuser.OPT_FOCUS]["MIN_VALUE"],self.opts[Focuser.OPT_FOCUS]["MAX_VALUE"])
+                #print(self.opts[Focuser.OPT_FOCUS]["MIN_VALUE"],self.opts[Focuser.OPT_FOCUS]["MAX_VALUE"])
         if not self.hasFocus:
             raise RuntimeError("Device {} has no focus_absolute control.".format(self.dev))
 
