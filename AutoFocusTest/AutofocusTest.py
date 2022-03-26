@@ -1,5 +1,4 @@
 from picamera2.picamera2 import *
-from picamera2.previews.null_preview import *
 from time import sleep
 from Focuser import Focuser
 import cv2
@@ -35,9 +34,8 @@ def autofocus(f_s=0,f_e=41):
         #print(val)
     return focus
 
-
 picam2 = Picamera2()
-preview = NullPreview(picam2)
+picam2.start_preview()
 preview_config = picam2.preview_configuration()
 capture_config = picam2.still_configuration()
 picam2.configure(preview_config)
