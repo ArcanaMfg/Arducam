@@ -1,5 +1,5 @@
-from picamera2 import *
-from null_preview import *
+from picamera2.picamera2 import *
+from picamera2.previews.null_preview import *
 from time import sleep
 from Focuser import Focuser
 
